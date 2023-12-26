@@ -1,0 +1,5 @@
+the image size of the slider must be of
+1576x765 .
+
+dont give the image its own height and width cause it wont 
+work in responsive method.

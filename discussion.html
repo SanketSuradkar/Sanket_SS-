@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css_file/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="/js_files/site.js"></script> <!-- this is javascript tag located outside the folder -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/X-icon" href="/images/logo4.png">
+  <title>SanketSS</title>
+</head>
+
+<body onload="myfunction()">
+  <div id="loading"></div>
+  <!-- <div class="spinner"></div> -->
+  <header>
+
+    <nav> 
+      <div class="row clearfix">
+        <img src="/images/logo.png" alt="site logo" class="logo" onclick="hmpage()">
+        <ul class="main-nav" id="check-class">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sign.html">Sing-up</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="cont.html">Contact</a></li>
+          <li><a href="ser.html">Services</a></li>
+        </ul>
+        <a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
+      </div>
+    </nav>
+    
+    <div class="main-content-header">
+      <h1><span class="colorchange">Welcome to discusion tab </span><br>
+          Here you can ask me questions.
+      </h1>
+      <div class="center" >
+        <h2 style="text-align: center;"><span class="colorchange">Discuss with me</span></h2>
+
+
+        <form action='/submited' autocomplete='on' data-netlify-recaptcha='true' method='post' name='response_From_sanketss_site' onsubmit='submited()'><input type='hidden' name='form-name' value='response_From_sanketss_site' />
+            <div class="txt_field">
+                <input type="text" name="Name" required placeholder="">
+                <span>
+
+                </span>
+                <label>Name</label>
+            </div>
+            <div class="txt_field">
+                <input type="email" name="Email" required placeholder="">
+                <span>
+
+                </span>
+                <label>Email</label>
+            </div>
+            <div class="txt_field">
+              <input type="tel" name="Number" required>
+              <span>
+
+              </span>
+              <label>Number</label>
+          </div>
+            <div class="txt_field">
+              <textarea name="Message" placeholder="Type Something"></textarea>
+                <span>
+
+                </span>
+          
+            </div>
+            <input type="submit" value="Submit" id="femail">
+            <div><script src='https://www.google.com/recaptcha/api.js'></script>
+<div class='g-recaptcha' data-sitekey='6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9'></div>
+<noscript>
+  <div>
+  <div style="width: 302px; height: 422px; position: relative;">
+  <div style="width: 302px; height: 422px; position: absolute;">
+  <iframe src="https://www.google.com/recaptcha/api/fallback?k=6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9" frameborder="0" scrolling="no"
+    style="width: 302px; height:422px; border-style: none;">
+  </iframe>
+  </div>
+  </div>
+  <div style="width: 300px; height: 60px; border-style: none; bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px; background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
+    <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
+      style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;" >
+    </textarea>
+  </div>
+  </div>
+</noscript>
+</div>
+            
+        </form>
+   
+
+        <!--=============================== this code was for the old discusion, where i can type and display text on the screen -->
+
+      <!-- <a href="download.html" class="btn btn-full">click to download</a>
+            <a href="discussion.html" class="btn btn-nav">click for discussion</a> -->
+      <!-- <section> -->
+
+        <!-- <div class="rt-container">
+          <div class="col-rt-12">
+            <div class="Scriptcontent">
+
+              <!-- partial:index.partial.html -->
+              <!-- <section id="app">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="comment">
+                        <p v-for="items in item" v-text="items"></p>
+                      </div>
+                     
+                    </div>
+                 
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <textarea type="text" class="input" placeholder="Write a something..." v-model="newItem"
+                        @keyup.enter="addItem()"></textarea>
+                      <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add
+                        Comment</button>
+                    </div>
+                  </div>
+                 
+                </div> -->
+                
+              <!-- </section> -->
+              <!-- partial -->
+              <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+              <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+              <script src="js/script.js"></script>
+
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+  </header>
+  <footer class="flooter_" style="width: 100%;height: 100px;  background-color: #010101;">
+    <h5 style="color: rgb(85, 82, 82); font-family: 'Dosis', sans-serif; line-height: 90px; text-align: center">
+      @Copyright <a href="https://www.instagram.com/morningstar_2026/" id="cc">Sanket-SS</a> 2019 | Last update on <date>
+        15/04/2023</date>
+    </h5>
+  </footer>
+  <script>
+    var preloder = document.getElementById('loading');
+    function myfunction() {
+      preloder.style.display = "none";
+    }
+  </script>
+</body>
+<!-- <style>
+  .main-content-header h3 {
+    margin-top: -500px;
+  }
+</style> -->
+<script>
+  // $(document).ready(function () {
+
+  //   $(".primaryContained").on('click', function () {
+  //     $(".comment").addClass("commentClicked");
+  //   });//end click
+  //   $("textarea").on('keyup.enter', function () {
+  //     $(".comment").addClass("commentClicked");
+  //   });//end keyup
+  // });//End Function
+
+  // new Vue({
+  //   el: "#app",
+  //   data: {
+  //     title: 'Add a comment',
+  //     newItem: '',
+  //     item: [],
+  //   },
+  //   methods: {
+  //     addItem() {
+  //       this.item.push(this.newItem);
+  //       this.newItem = "";
+  //     }
+  //   }
+
+  // });
+</script>
+<style>
+  header, #loading {
+    height: 140vh;
+}
+.center{
+  margin-top: 350px;
+}
+.main-content-header{
+  margin-top: -110px;
+}
+
+input[type="submit"]:hover{
+    border-color: #2691d9;
+    transition: .5s;
+    color: #0991ec;
+    background-color:  #2691d915;
+}
+</style>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css_file/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/js_files/site.js"></script> <!-- this is javascript tag located outside the folder -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/X-icon" href="/images/logo4.png">
+    <title>SanketSS</title>
+</head>
+<style>
+    @media only screen and (max-width: 393px) {
+    .main-content-header {
+        top: 26%;
+        width: 87%;
+        padding: 0 2%;
+    }
+}
+.main-content-header {
+        top: 40%;
+        
+           
+    }
+header{
+    height: 150vh;
+}
+
+/* =================container=================== */
+.container{
+	display: grid;
+	width: 1fr;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 1em;
+	padding-top: 134px;
+    margin-top: 40vh;
+    padding-bottom: 134px;
+    background-color: rgba(0, 34, 255, 0.137);
+    border: solid black 1px;
+}
+
+.button{
+    
+    border: solid red 1px;
+	padding: 10px;
+	text-align: center;
+	cursor: pointer;
+	background-color: transparent;
+    background-color:  rgba(255, 0, 0, 0.062);
+	color: red;
+	font-size: 20px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px #333;
+	transition: .2s;}
+	.button:hover{
+		box-shadow: 10px 10px 10px rgb(4, 0, 4);
+		transform: scale(1.05);
+		background-color:  #2691d915;
+		color: #0991ec;
+        border-color: #2691d9;
+	}
+    .main-content-header h1{
+        text-align: center;
+    }
+
+</style>
+
+
+<body onload="myfunction()">
+    <div id="loading"></div>
+    <header>
+
+        <nav>
+            <div class="row clearfix">
+                <img src="/images/logo.png" alt="site logo" class="logo" onclick="hmpage()">
+                <ul class="main-nav" id="check-class">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sign.html">Sing-up</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="cont.html">Contact</a></li>
+                    <li><a href="ser.html">Services</a></li>
+                </ul>
+                <a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
+            </div>
+        </nav>
+        <div class="main-content-header">
+            <!-- <h1>welcome to <span class="colorchange">Sanket-SS </span>site.<br>
+                blog for problem solving and Home for technology.
+            </h1> -->
+            <h1>Here is some tool where you can download easily</h1>
+            <!-- <a href="download.html" class="btn btn-full">click to download</a>
+            <a href="discussion.html" class="btn btn-nav">click for discussion</a> -->
+
+        </div>
+        <div class="container">
+
+            <div class="button" onclick=" fire()">All important DLL files</div>
+            <div class="button" onclick="check()">Device Checker Code</div>
+            <div class="button" onclick="changer()">Bk-image changer html css</div>
+            <div class="button" onclick="pre()">Preloader Code</div>
+            <div class="button">NA</div>
+            <div class="button">NA</div>
+            <div class="button">NA</div>
+            <div class="button">NA</div>
+        </div>
+    </header>
+    <footer class="flooter_" style="width: 100%;height: 100px;  background-color: #010101;">
+        <h5 style="color: rgb(85, 82, 82); font-family: 'Dosis', sans-serif; line-height: 100px; text-align: center;">
+            &#169;Copyright <a href="https://www.instagram.com/morningstar_2026/" id="cc">Sanket-SS</a> 2019 | Last
+            update on <date>15/04/2023</date>
+        </h5>
+    </footer>
+    <script>
+        var preloder = document.getElementById('loading');
+        function myfunction() {
+            preloder.style.display = "none";
+        }
+
+        function fire(){
+            window.open("https://www.mediafire.com/file/t1z3wel7uta5dz2/All_imp_dll_files_by_sanket_sszip.zip/file")
+        }
+        function check(){
+            window.open("https://codepen.io/sanketsuradkar/pen/jOeqyvd?editors=0010")
+        }
+        function changer(){
+            window.open("https://codepen.io/sanketsuradkar/pen/PoyNpwd")
+        }
+        function pre(){
+            window.open("https://codepen.io/sanketsuradkar/pen/NWONpwK")
+        }
+    </script>
+
+    
+</body>
+
+</html>
