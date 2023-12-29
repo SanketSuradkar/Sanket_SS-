@@ -40,7 +40,7 @@ header{
     height: 100vh;
     animation: slide 40s infinite ease;
     transition: ease-in-out;
-    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url("/images/ms1.jpg");
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url("images/ms1.jpg");
 }
 .clearfix:after{
     content: ".";
